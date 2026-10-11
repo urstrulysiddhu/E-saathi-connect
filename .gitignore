@@ -1,0 +1,47 @@
+﻿node_modules/
+**/node_modules/
+dist/
+build/
+coverage/
+.cdk.staging/
+cdk.out/
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+credentials
+credentials.*
+.aws/
+.DS_Store
+*.log
+scratch/
+
+# Temporary patch archives
+*.zip
+
+
+# Local deployment outputs
+backend/cdk-outputs.json
+
+# Internal working documents and temporary patch archives
+INITIAL DECRIPTION.txt
+e_saathi_connect_project_status_report_day2.docx
+*.zip
+scratch/
+
+backend/cdk-outputs.json
+
+# Local patches and temporary archives
+*.zip
+scratch/
+
+# Internal working documents
+HANDOFF.md
+"INITIAL DECRIPTION.txt"
+e_saathi_connect_project_status_report_day2.docx
+
+# Generated deployment outputs
+backend/cdk-outputs.json
+backend/cdk-template.yaml

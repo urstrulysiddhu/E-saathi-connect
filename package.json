@@ -1,0 +1,33 @@
+{
+  "name": "e-saathi-connect-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "npm run test --workspaces --if-present",
+    "test:watch": "npm run test:watch --workspaces --if-present",
+    "cdk:synth": "npm run cdk:synth --workspace=@e-saathi/backend",
+    "validate": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run cdk:synth"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^8.0.0"
+  }
+}
